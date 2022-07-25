@@ -12,3 +12,35 @@ Utiliza este objeto para mostrar la descripción, ingresar y extraer dinero y vo
 mostrar la descripción del estado de la cuenta.
 Rectángulos
 */  
+
+let cuenta ={
+    titular: 'Alex',
+    saldo: 0,
+    informar: ()=>{ alert("La cuenta del titular "+cuenta.titular+" tiene $"+cuenta.saldo+" a la fecha.")},
+    ingresar: ()=>{
+        let deposito = parseInt(prompt("Ingrese cifra a depositar"));
+        cuenta.saldo = cuenta.saldo + deposito
+    },
+    extraer: ()=>{
+        let retiro = parseInt(prompt("Ingrese cifra a extraer"));
+        cuenta.saldo = cuenta.saldo - retiro
+    }
+    
+}
+cuenta.informar()
+cuenta.ingresar()
+cuenta.informar()
+cuenta.extraer()
+cuenta.informar()
+
+
+
+
+/*
+let deposito = parseInt(prompt("Ingrese valor"));
+
+cuenta.saldo = cuenta.saldo + deposito
+
+document.write(cuenta.saldo)
+
+*/
