@@ -4,7 +4,7 @@ propiedades de alto y ancho, mas los métodos necesarios para modificar y
 mostrar sus propiedades, calcular el perímetro y el área
 */
 
-class Rectangulos{ 
+class Rectangulo{ 
 
     constructor(nombre, ancho, alto, perimetro, area){
         this.nombre= nombre;   
@@ -40,18 +40,18 @@ class Rectangulos{
 
 }
 
-let rectangulo1 = new Rectangulos('Rectangulo1',0,0,0,0,)
+let rectangulo1 = new Rectangulo('Rectangulo1',0,0,0,0,)
 rectangulo1.ingresarAlto();
 rectangulo1.ingresarAncho();
 rectangulo1.calculos()
 
 
-let rectangulo2 = new Rectangulos('Rectangulo2',0,0,0,0,)
+let rectangulo2 = new Rectangulo('Rectangulo2',0,0,0,0,)
 rectangulo2.ingresarAlto();
 rectangulo2.ingresarAncho();
 rectangulo2.calculos()
 
-let rectangulo3 = new Rectangulos('Rectangulo2',0,0,0,0,)
+let rectangulo3 = new Rectangulo('Rectangulo3',0,0,0,0,)
 rectangulo3.ingresarAlto();
 rectangulo3.ingresarAncho();
 rectangulo3.calculos()

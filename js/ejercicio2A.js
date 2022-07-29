@@ -21,7 +21,7 @@ class Cuenta{
     ingresar(deposito){
         if (isNaN(deposito) == false && deposito >=0){
              this.saldo += deposito
-             this.movimientos.push(`Depósito: ${deposito}`)
+             this.movimientos.unshift(`Depósito: ${deposito}`)
             alert(`Se depositó $${deposito}`) 
         }
         else{
@@ -32,7 +32,7 @@ class Cuenta{
         if (isNaN(retiro) == false && retiro >=0){
              if(this.saldo >= retiro){
                   this.saldo -= retiro;
-                  this.movimientos.push(`Retiro: ${retiro}`)
+                  this.movimientos.unshift(`Retiro: ${retiro}`)
                  alert(`Se retiró $${retiro}`)
              }else{
              alert(`Saldo insuficiente`)
@@ -81,6 +81,13 @@ document.write(cliente.movimientosEnSesion)
 /*
 
 HACER UN MODELO DE TICKET
+
+
+
+
+Method 3: unshift() method
+
+The unshift() method is used to add one or multiple elements to the beginning of an array. It returns the length of the new array formed. An object can be inserted by passing the object as a parameter to this method. The object is hence added to the beginning of the array.
 
 */
 
