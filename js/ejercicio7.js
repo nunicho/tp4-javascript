@@ -19,17 +19,3 @@ ha eliminado o no por pantalla
 ● huecosLibres(): indica cuántos contactos más podemos ingresar.
 Crea un menú con opciones por consola para probar todas estas funcionalidades.
 */
-let titulo1 = "Guerra Mundial Z";
-let titulo2 = "Mundo Anillo";
-let extensionNovela1 = 900;
-let extensionNovela2 = 850;
-
-    if (extensionNovela1> extensionNovela2){
-        document.write(`El libro ${titulo1} tiene más páginas que el libro ${titulo2}. `)
-    }
-    else if (extensionNovela1 < extensionNovela2){
-        document.write(`El libro ${titulo2} tiene más páginas que el libro ${titulo1}. `)
-    }
-    else{
-    document.write(`El libro ${titulo1} tiene igual cantidad de páginas que el libro ${titulo2}. `)
-    }
