@@ -19,5 +19,3 @@ ha eliminado o no por pantalla
 ● huecosLibres(): indica cuántos contactos más podemos ingresar.
 Crea un menú con opciones por consola para probar todas estas funcionalidades.
 */
-
-  
