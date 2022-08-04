@@ -20,20 +20,6 @@ ha eliminado o no por pantalla
 Crea un menú con opciones por consola para probar todas estas funcionalidades.
 */
 
-// Agenda telefónica de contactos, un contacto está definido por un nombre y un teléfono. El nombre es único.
-// La agenda contiene contactos y será creada con un tamaño por defecto de 10 o el usuario puede modificar el tamaño.
-// métodos:
-/*
-aniadirContacto(Contacto): Añade un contacto a la agenda, sino la agenda no puede almacenar más contactos indicar por pantalla.
-existeContacto(Conctacto): indica si el contacto pasado existe o no.
-listarContactos(): Lista toda la agenda
-buscarContacto(nombre): busca un contacto por su nombre y muestra su teléfono.
-eliminarContacto(Contacto c): elimina el contacto de la agenda, indica si se ha eliminado o no por pantalla
-agendaLlena(): indica si la agenda está llena.
-huecosLibres(): indica cuántos contactos más podemos ingresar.
-*/
-
-// Crea un menú con opciones por consola para probar todas estas funcionalidades.
 
 class Contacto {
   constructor(nombre, telefono) {
@@ -158,9 +144,6 @@ do {
   switch (opcion) {
     case 1:
       // 1 - Añadir contacto.
-      // pedir el nombre y el teléfono
-      //crear el contacto
-      // invocar a agregarContacto
       let nombre = prompt("Ingresar un nombre").toLowerCase();
       let telefono = prompt("Ingrese un telefono");
       let nuevoContacto = new Contacto(nombre, telefono);
