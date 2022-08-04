@@ -16,7 +16,7 @@ class Producto{
         this.precio = precio;
       }
       añadirEnInventario(){
-        inventario.push("Codigo: "+this.codigo+" "+"Nombre: "+this.nombre+" "+"Precio $ "+this.precio) 
+        inventario.push("Codigo: "+this.codigo+" "+"Nombre: "+this.nombre+" "+"Precio: $ "+this.precio) 
 
       }
   
