@@ -1,4 +1,5 @@
 /*
+RECTÁNGULOS
 3-Escribe una clase que permita crear distintos objetos “rectángulos”, con las
 propiedades de alto y ancho, mas los métodos necesarios para modificar y
 mostrar sus propiedades, calcular el perímetro y el área
@@ -40,17 +41,20 @@ class Rectangulo{
 
 }
 
+
+alert("Ingresar datos Rectángulo 1")
 let rectangulo1 = new Rectangulo('Rectangulo1',0,0,0,0,)
 rectangulo1.ingresarAlto();
 rectangulo1.ingresarAncho();
 rectangulo1.calculos()
 
-
+alert("Ingresar datos Rectángulo 2")
 let rectangulo2 = new Rectangulo('Rectangulo2',0,0,0,0,)
 rectangulo2.ingresarAlto();
 rectangulo2.ingresarAncho();
 rectangulo2.calculos()
 
+alert("Ingresar datos Rectángulo 3")
 let rectangulo3 = new Rectangulo('Rectangulo3',0,0,0,0,)
 rectangulo3.ingresarAlto();
 rectangulo3.ingresarAncho();

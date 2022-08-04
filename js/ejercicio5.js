@@ -2,9 +2,7 @@
 5- Crea una clase llamada Persona que siga las siguientes condiciones:
 Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura,
 año de nacimiento. 
-
-Si quieres añadir alguna propiedad extra puedes hacerlo. !!!!!!!!!!!!!!!!!!!!!!!!!!
-
+Si quieres añadir alguna propiedad extra puedes hacerlo. 
 Los métodos que se debe poder utilizar son:
 mostrarGeneracion: este método debe mostrar un mensaje indicando a qué
 generación pertenece la persona creada y cual es el rasgo característico de esta
@@ -20,13 +18,13 @@ let yearPresente = new Date().getFullYear()
 
 class Persona{ 
 
-    constructor(nombre, edad, sexo, peso, altura, yearNacimiento,){
+    constructor(nombre, sexo, peso, altura, yearNacimiento,){
         this.nombre = nombre;   
-        this.edad = edad;
         this.sexo = sexo;
         this.peso = peso;
         this.altura = altura;
         this.yearNacimiento = yearNacimiento;
+        this.edad = yearPresente - this.yearNacimiento;
         }
         mostrarGeneracion(){
             if(this.yearNacimiento>=1930 && this.yearNacimiento<=1948){
@@ -77,16 +75,16 @@ class Persona{
             document.write(`<h5>La persona tiene las siguientes características: <h5>
             <ol>
             <li>Nombre: ${this.nombre}</li> 
-            <li>Edad: ${this.edad}</li>
             <li>Sexo: ${this.sexo}</li>
             <li>Peso: ${this.peso} kgs</li>
             <li>Altura: ${this.altura} cms</li>
             <li>Año de nacimiento: ${this.yearNacimiento}</li>
+            <li>Edad: ${this.edad}</li>
             </ol>
             `)
         }
         calcularIMC(){                  
-            document.write('<h5> CÁLCULO DEL ÍNDICE DE MASA CORPORAL </h5>')
+            document.write('<h5> BONUS!!! CÁLCULO DEL ÍNDICE DE MASA CORPORAL </h5>')
             let alturaIMC = Math.pow(this.altura/100,2)
             let indiceIMC = this.peso/alturaIMC  ;
                 if(indiceIMC <18.5){
@@ -106,7 +104,6 @@ class Persona{
 
     let casoPersona = new Persona (
         nombre=prompt("Ingrese el nombre de la persona"),
-        edad=parseInt(prompt("Ingrese la edad")),
         sexo=prompt("Ingrese H si es hombre o M si mujer"),
         peso=parseFloat(prompt("Indique su peso en kg")),
         altura=parseFloat(prompt("ingrese su altura en cms")),
@@ -130,4 +127,3 @@ Math.pow
 
 
 */
-
