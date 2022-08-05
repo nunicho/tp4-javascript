@@ -43,6 +43,7 @@ class agenda {
       if (!this.agendaLlena()) {
         // con el ! es lo mismo que poner this.agendaLlena() === false
         this.contactos.push(contactoNuevo);
+        alert("Contacto agregado a la agenda.");
       }
     }
   }
@@ -70,7 +71,7 @@ class agenda {
     let contactoConsultado = this.contactos.filter((itemContacto) => {
       return itemContacto.nombre === nombre;
     });
-    alert(JSON.stringify(contactoConsultado));
+    alert("Contacto buscado :"+JSON.stringify(contactoConsultado));
   }
 
   eliminarContacto(nombre) {
@@ -79,7 +80,7 @@ class agenda {
     });
     this.contactos = contactosFiltrados;
     alert("Elemento eliminado " + nombre);
-    alert(JSON.stringify(this.contactos));
+    alert("Contactos restantes: "+JSON.stringify(this.contactos));  
   }
 
   agendaLlena() {
@@ -87,7 +88,7 @@ class agenda {
       alert("La agenda está llena");
       return true;
     } else {
-      alert("Hay espacio disponible");
+      alert("Hay espacio disponible.");
       return false;
     }
   }
@@ -97,7 +98,7 @@ class agenda {
       alert("La agenda tiene espacio disponible: " + espaciosDisponibles);
       return true;
     } else {
-      alert("La agenda está llena");
+      alert("La agenda está llena.");
       return false;
     }
   }
@@ -111,12 +112,12 @@ class agenda {
       prompt("ingresar nuevo tamaño deseado para la agenda")
     );
 
-    if (nuevoTamanio > this.contactos.length) {
+    if (nuevoTamanio >= this.contactos.length) {
       this.tamanio = nuevoTamanio;
       alert("Nuevo tamaño de agenda:" + this.tamanio);
     } else {
       alert(
-        "El tamaño de la agenda tiene que ser mayor a 0 y mayor o igual a la cantidad de contactos ya ingresados."
+        "El tamaño de la agenda tiene que ser mayor a 0 y mayor a la cantidad de contactos ya ingresados."
       );
     }
   }

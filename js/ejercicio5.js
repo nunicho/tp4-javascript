@@ -84,7 +84,7 @@ class Persona{
             `)
         }
         calcularIMC(){                  
-            document.write('<h5> BONUS!!! CÁLCULO DEL ÍNDICE DE MASA CORPORAL </h5>')
+            document.write('<h5> BONUS!!! CÁLCULO DEL ÍNDICE DE MASA CORPORAL (con datos de altura y peso) </h5>')
             let alturaIMC = Math.pow(this.altura/100,2)
             let indiceIMC = this.peso/alturaIMC  ;
                 if(indiceIMC <18.5){
